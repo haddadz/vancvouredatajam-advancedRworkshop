@@ -1,0 +1,33 @@
+
+---
+title: "00-Agenda"
+output:
+  html_document:
+    toc: true
+---
+
+
+```{r}
+%md
+#Agenda
+- Introduction
+- Pre-workshop
+  - Setup  (Link to materials/slides/code & my reop)
+  - Links (Databricks, Azure Notebooks, RStudio Cloud or Ziggy)
+- Content
+ - Intro to Data Science and Machine learning (Supervised)
+ - Decision Trees
+ - Random Forest
+ - Practice datasets/Evaluate Models (metrics)
+ - Advanced content (ML lifecycle and model tracking)
+ -  Resources
+
+```
+
+
+# Schedule
+- 5:30 - 6:20 R environment setup (Databricks) and Intro to ML and Decision trees
+- 10 min break
+- 6:30 - 7:20  Intro to Random Forest and going through some examples
+- 10 min break
+- 7:30 - 8:20  Going through some examples on your own and time for questions

@@ -1,0 +1,118 @@
+
+---
+title: "03-Decision_Trees_Code"
+output:
+  html_document:
+    toc: true
+---
+
+
+```{r}
+install.packages(c("mlbench","rpart.plot", "e1071"))
+```
+
+
+```{r}
+library("caret")
+library("e1071")
+library("rpart")
+library("tidyverse")
+```
+
+
+```{r}
+# Load the data
+data("Boston", package = "MASS")
+head(Boston)
+#https://www.cs.toronto.edu/~delve/data/boston/bostonDetail.html
+```
+
+
+```{r}
+%md
+## Let's look into the Boston Dataset
+## Build a Decision Tree to predict Median Value
+```
+
+
+```{r}
+%md
+## What is the first step?
+```
+
+
+```{r}
+# Inspect the data
+sample_n(Boston, 3)
+# Split the data into training and test set
+set.seed(123)
+training.samples <- Boston$medv %>%
+  createDataPartition(p = 0.8, list = FALSE)
+train.data  <- Boston[training.samples, ]
+test.data <- Boston[-training.samples, ]
+```
+
+
+```{r}
+# Fit the model on the training set
+set.seed(123)
+model <- train(
+  medv ~., data = train.data, method = "rpart",
+  trControl = trainControl("cv", number = 10),
+  tuneLength = 10
+  )
+# Plot model error vs different values of
+# cp (complexity parameter)
+plot(model)
+
+```
+
+
+```{r}
+# Print the best tuning parameter cp that
+# minimize the model RMSE
+model$bestTune
+```
+
+
+```{r}
+# Plot the final tree model
+par(xpd = NA) # Avoid clipping the text in some device
+plot(model$finalModel)
+text(model$finalModel, digits = 3)
+```
+
+
+```{r}
+# Decision rules in the model
+model$finalModel
+# Make predictions on the test data
+predictions <- model %>% predict(test.data)
+head(predictions)
+
+```
+
+
+```{r}
+summary(test.data$medv)
+```
+
+
+```{r}
+summary(predictions)
+```
+
+
+```{r}
+# Compute the prediction error RMSE
+RMSE(predictions, test.data$medv)
+```
+
+
+```{r}
+# plot(predictions, test.data$medv)
+ plot(predictions,test.data$medv,
+      xlab="predicted",ylab="actual")
+ abline(a=0,b=1)
+```
+
