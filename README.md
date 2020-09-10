@@ -46,9 +46,9 @@ https://github.com/haddadz/vancvouredatajam-advancedRworkshop
 15- https://en.wikipedia.org/wiki/Random_forest    
 16- https://machinelearningmastery.com/machine-learning-in-r-step-by-step/   
 17- https://lgatto.github.io/IntroMachineLearningWithR/index.html   
-18- http://www.sthda.com/english/articles/35-statistical-machine-learning-essentials/141-cart-model-decision-tree-essentials/#:~:text=So%2C%20it%20is%20also%20known,package%20of%20the%20same%20name.
-19- https://www.r-bloggers.com/how-to-implement-random-forests-in-r/
-20- https://scikit-learn.org/stable/auto_examples/ensemble/plot_forest_iris.html
+18- http://www.sthda.com/english/articles/35-statistical-machine-learning-essentials/141-cart-model-decision-tree-essentials/#:~:text=So%2C%20it%20is%20also%20known,package%20of%20the%20same%20name.   
+19- https://www.r-bloggers.com/how-to-implement-random-forests-in-r/    
+20- https://scikit-learn.org/stable/auto_examples/ensemble/plot_forest_iris.html      
 21- https://towardsai.net/p/programming/decision-trees-explained-with-a-practical-example-fe47872d3b53     
 22- https://bradleyboehmke.github.io/HOML/     
 23- https://www.bigbookofr.com/machine-learning.html   
