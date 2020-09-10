@@ -1,0 +1,104 @@
+
+---
+title: "05a-TryBuildingModel"
+output:
+  html_document:
+    toc: true
+---
+
+
+#Try it out on your own
+## Build a Decision Tree and Random Forest - Compare both models
+
+```{r}
+%md
+
+## Dataset
+- Car Evaluation data set from Data Source: https://archive.ics.uci.edu/ml/machine-learning-databases/car/
+
+## Problem
+- Predict Condition of Cars based on features provided
+ - Let's try both Decision Trees and Random Forest and compare their performance
+
+## Questions
+1- What is the first step?  
+2- What's after that?   
+```
+
+
+```{r}
+%md
+
+## Tips
+1- Load the packages
+2- Load the data
+3- Split the data
+```
+
+
+```{r}
+%r
+# install.packages("e1071")
+```
+
+
+```{r}
+#packages
+
+library(randomForest)
+library(rpart)
+library(caret)
+# library(e1071)
+```
+
+
+```{r}
+%r
+
+#load my data
+# Data Source: https://archive.ics.uci.edu/ml/machine-learning-databases/car/
+
+# Load the dataset and explore
+data1 <- read.csv("https://archive.ics.uci.edu/ml/machine-learning-databases/car/car.data", header = TRUE)
+ 
+
+```
+
+
+```{r}
+display(head(data1))
+
+#display(class(data1))
+```
+
+
+```{r}
+class(data1)
+colnames(data1) <- c("BuyingPrice", "Maintenance","NumDoors","NumPersons", "BootSpace","Safety","Condition")
+
+```
+
+
+```{r}
+head(data1)
+ 
+
+```
+
+
+```{r}
+str(data1)
+```
+
+
+```{r}
+summary(data1)
+```
+
+
+```{r}
+%md
+
+## Try on your own
+```
+

@@ -33,6 +33,8 @@ output:
 - Mainly using R 
 - This workshop will be focused on Decision Trees and Random Forest
 - Assuming some stats background and geared towards advanced R users
+- Assuming knoweldge of Train/Test splits
+- Assuming knoweldge of Model Evaluation (metrics)
 
 ```{r}
 %md
@@ -43,6 +45,9 @@ output:
   - End to end machine learning
   - Feature selection/proper tuning/validation
   - Data pre-processing
+  - Train/Test splits
+  - Paralleization
+  - Proper model tuning
 ```
 
 
@@ -50,21 +55,6 @@ output:
 %md
 ####For Databricks community editition users, let's head to Databricks and spin up the cluster (install packages). 
 ####For local RStudio users, get your packages ready. 
-```
-
-
-```{r}
-%python
-#add section on mlflow
-
-```
-
-
-```{r}
-%python
-#add section on notebooks
-#add section on shortcuts
-
 ```
 
 # What is Data Science?
@@ -120,9 +110,6 @@ A reinforcement learning algorithm, or agent, learns by interacting with its env
 -  Regression: How much will you use the service?
 -  Similarity Matching: Recommender systems/similarity
 -  Clustering: Can you find natural groups in your data set?
-
-
-![deployment.png](attachment:deployment.png)
 ## Applications of Data Science
 - Fraud and Risk Detection
 - Healthcare
@@ -191,12 +178,23 @@ Some examples - Deployments depends on the application:
 
 ```{r}
 %md
-#Additional resources
+## Additional resources
 
-#########Youtube channels for databricks
-####kaggle etc
-####meetups
-#### books
+### Youtube channels for databricks
+- https://www.youtube.com/channel/UC3q8O3Bh2Le8Rj1-Q-_UUbA
+
+### Key to Always practice (one example: kaggle)
+- https://www.kaggle.com/
+
+### Meetups (Vancouver)
+- R-Ladies Vancouver  https://www.meetup.com/rladies-vancouver/
+- Learn Data Science   https://www.meetup.com/LearnDataScience/
+- Women Who Code Vancouver   https://www.meetup.com/Women-Who-Code-Vancouver/
+- PyLadies Vancouver   https://www.meetup.com/PyLadies-Vancouver/
+
+### Books and additiontal resources
+- Big Book of R https://www.bigbookofr.com/index.html
+- How Do I Get Started? Machine Learning Mastery  https://machinelearningmastery.com/start-here/
+
 ```
 
-# Demo time!

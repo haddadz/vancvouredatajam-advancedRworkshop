@@ -228,9 +228,22 @@ mean(predicted.classes == test.data$diabetes)
 
 ```{r}
 %md
+## Take aways: 
+- Simple and easy to implement (no preprocessing required and categorical variables handled, handle missing values)
+- Not great on predictive accuracy
+- Deep trees have high variance / Shallow Trees bias.
+
+## More technical: 
 - A problem with decision trees like CART is that they are greedy. 
-- Choose which variable to split on using a greedy algorithm that minimizes error. 
 - Even with Bagging, the decision trees can have a lot of structural similarities and in turn have high correlation in their predictions.
+```
+
+
+```{r}
+%md
+## Another way to think about Decision Trees
+- Great advantage of decision trees: make a complex decision simpler by breaking it down into smaller, simpler decisions using a divide-and-conquer strategy. 
+- Identify a set of if-else conditions that split the data according to the value of the features.
 ```
 
 
