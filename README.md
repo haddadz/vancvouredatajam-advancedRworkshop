@@ -10,6 +10,8 @@ https://docs.google.com/document/d/1qcGO1fLM0XrOQpICRWmllP4iKKaZQ6ZlZ78wUdhIYfg/
 - Mainly using R 
 - This workshop will be focused on Decision Trees and Random Forest
 
+![alt text](https://github.com/haddadz/vancvouredatajam-advancedRworkshop/blob/master/images/advancedr.png?raw=true)
+
 
 ### R setup options to follow along (feel free to choose the setup you are comfortable with):
 - Option 1: Local R & R Studio (R version 4.0.2 or later)
